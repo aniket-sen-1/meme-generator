@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  max-width: 550px;
+  margin: 50px auto;
+  background: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  padding: 19px 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(103, 34, 128, 1) 0%,
+    rgba(103, 34, 128, 1) 0%,
+    rgba(166, 38, 211, 1) 100%
+  );
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header--nav {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header--nav--logo {
+  width: 31.31px;
+}
+
+.header--nav--heading {
+  padding-left: 6.69px;
+  margin-right: auto;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 20.7482px;
+  line-height: 24px;
+  letter-spacing: -0.06em;
+}
+
+.header--nav--title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+.header_container {
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.container {
+  max-width: calc(100% - 72px);
+  margin: 36px auto;
+}
+
+.form {
+  display: grid;
+  grid-template: 35px 35px / minmax(0, 1fr) minmax(0, 1fr);
+  row-gap: 15px;
+  column-gap: 17px;
+}
+.form--input {
+  padding: 10px 11px;
+  border: solid #d5d4d8 1px;
+  border-radius: 6px;
+}
+
+.form--input:focus {
+  border: 0px;
+  outline: solid #8824ab 2px;
+}
+
+.form--button {
+  grid-column: 1/-1;
+  border: 0px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(103, 34, 128, 1) 0%,
+    rgba(103, 34, 128, 1) 0%,
+    rgba(166, 38, 211, 1) 100%
+  );
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.meme--image {
+  padding: 36px 0 55px 0;
+  width: 100%;
 }

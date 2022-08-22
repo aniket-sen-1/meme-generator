@@ -68,6 +68,8 @@ body {
   padding: 10px 11px;
   border: solid #d5d4d8 1px;
   border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .form--input:focus {
@@ -94,8 +96,36 @@ body {
   cursor: pointer;
   color: #ffffff;
 }
-
-.meme--image {
-  padding: 36px 0 55px 0;
+.meme--box {
+  position: relative;
+  margin: 36px 0;
+}
+.meme--box--image {
+  padding: 0 0 0 0;
   width: 100%;
+}
+
+.meme--box--text {
+  position: absolute;
+  width: 95%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 8px;
+}
+.bottom {
+  bottom: 8px;
 }

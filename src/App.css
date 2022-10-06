@@ -11,10 +11,12 @@ body {
   max-width: 550px;
   margin: 50px auto;
   background: white;
+  border: 0.1px solid #e5e5e5;
+  border-radius: 10px;
 }
 .header {
   padding: 19px 0;
-  background: rgb(2, 0, 36);
+  border-radius: 10px 10px 0 0;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -66,10 +68,11 @@ body {
 }
 .form--input {
   padding: 10px 11px;
-  border: solid #d5d4d8 1px;
+  border: solid #ccbbfe 1px;
   border-radius: 6px;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgba(2, 0, 3, 0.647);
 }
 
 .form--input:focus {
@@ -128,4 +131,20 @@ body {
 }
 .bottom {
   bottom: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .meme--box--text {
+    font-size: 1.2em;
+  }
+  .main {
+    max-width: 100%;
+    margin: -0px auto;
+    border-radius: 0px;
+    border: 0px solid #e5e5e5;
+    height: 100vh;
+  }
+  .header {
+    border-radius: 0px;
+  }
 }
